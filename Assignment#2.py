@@ -216,7 +216,17 @@ while user_active:
 
 
 def exercise09():
-    # Compile a list of 10 random URLs of dog pics
+    # Compile a list of 10 random URLs of dog pics    
+import random
+import urllib.request
+
+def download_image(url):
+    name = random.randrange(1,10)
+    fullname = str(name)+".jpg"
+    urllib.request.urlretrieve(url,fullname)     
+download_image("https://random.dog/woof.json")
+
+#or
 
     dogs = []
     url = 'https://random.dog/woof.json'
@@ -224,9 +234,10 @@ def exercise09():
     print(str(dog_media.content))
     
     # ------ Place code below here \/ \/ \/ ------
-
-    
-    
+from bs4 import BeautifulSoup
+import requests as r
+dog_media = r.get(url='https://random.dog/woof.json')
+print(dog_media.content)   
     # ------ Place code above here /\ /\ /\ ------
 
     return dogs
