@@ -44,8 +44,11 @@ def exercise03():
     the_fifth_element = -999
 
     # ------ Place code below here \/ \/ \/ ------
-
-
+    countdown = [9, 8, 7, 5, 4, 2, 1, 6, 10, 3, 0, -5]
+    the_fifth_element = -999
+    for n in range (0,12):
+        print(countdown[n])
+    print(the_fifth_element)
     # ------ Place code above here /\ /\ /\ ------
 
     return countdown, the_fifth_element
