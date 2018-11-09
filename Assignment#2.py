@@ -81,7 +81,11 @@ def exercise04(more_temperatures, iot_sensor_points, a, b, c, d, e):
         print(more_temperatures[s])
         
     #3.
-    
+    more_temperatures = {'a':40,'b':50,'c':60,'d':70,'e':80,}
+    temperatures_list = list(more_temperatures.keys())
+    for s in temperatures_list:
+        print(s)
+        
     #4.
     
     #5.
