@@ -145,8 +145,15 @@ def exercise06(n):
      # This function will receive an arbitrary list of numbers of arbitrary size and find the average of those numbers. The size of the list may vary. Find the method that requires the  least amount of code. Return back the length, sum of list and average of list
 
     # ------ Place code below here \/ \/ \/ ------
+list = [23,45,'xy',88,90,'hello',66]
+print ('list length:', len(list))
 
+list = [23,45,67,88,90,39,66]
+print ('sum:', sum(list))
 
+import numpy as np
+list = [23,45,67,88,90,39,66]
+print (np.mean(list))
     # ------ Place code above here /\ /\ /\ ------
     return length_n, sum_n, average_n
 
