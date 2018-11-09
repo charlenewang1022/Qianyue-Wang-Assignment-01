@@ -30,8 +30,9 @@ def exercise02():
     # Repeat exercise 1 and loop through and print each item in the animal list by iterating through an index number and using range(). Set the variable len_animals to the length of the animal list.
 
     # ------ Place code below here \/ \/ \/ ------
-
-
+    animals=['cat','dog','crouching tiger','hidden dragon','manta ray']
+    for len_animals in range (0,5):
+        print(animals[len_animals])
     # ------ Place code above here /\ /\ /\ ------
 
     return animals, len_animals
