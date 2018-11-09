@@ -124,9 +124,20 @@ def exercise05(n):
     # This function will find n factorial using recursion (calling itself) and return the solution. For example exercise05(5) will return 120. No Python functions are to be used.
 
     # ------ Place code below here \/ \/ \/ ------
-
-    pass # Remove this line
-
+def factorial(n):  
+   if n == 1:  
+       return n  
+   else:  
+       return n*factorial(n-1)  
+ 
+num = int(input("Enter a number: "))  
+ 
+if num < 0:  
+   print("factorial does not exist")  
+elif num == 0:  
+   print("1")  
+else:  
+  print(factorial(num))
     # ------ Place code above here /\ /\ /\ ------
 
 
