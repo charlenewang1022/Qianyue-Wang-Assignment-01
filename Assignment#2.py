@@ -179,8 +179,38 @@ def exercise07(n):
 
 # ------ Place code below here \/ \/ \/ ------
 
+#1.
+display_menu={'drink':'coke','burger':'chicken_sandwhich','roll':'chicken_roll','salad':'caesar_salad','snack':'chicken_tender'}
+print(display_menu)
+print(type(display_menu))
 
+#2.
+display_menu={'drink':'coke','burger':'chicken_sandwhich','roll':'chicken_roll','salad':'caesar_salad','snack':'chicken_tender'}
+print ('num_elements:', len(display_menu))
 
+#3,4,5,6,7,8
+display_menu={'drink':'coke','burger':'chicken_sandwhich','roll':'chicken_roll','salad':'caesar_salad','snack':'chicken_tender'}
+
+menu_valid=1
+menu_not_valid=2
+menu_exit=3
+
+menu = ('valid','not_valid','exit')
+user_active = True
+while user_active:
+    for n in menu:
+        print(n)
+
+    choice = int(input('pick one 1-3'))
+    if choice==menu_valid:
+        for k,v in display_menu.items():
+            print(k, 'has', v)
+
+    elif choice==menu_not_valid:
+        re_enter = input('re enter a valid number')
+    
+    elif choice==menu_exit:
+        user_active=False
 # ------ Place code above here /\ /\ /\ ------
 
 def exercise09():
