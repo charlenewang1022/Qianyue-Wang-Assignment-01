@@ -166,6 +166,7 @@ def exercise07(n):
 
     # ------ Place code above here /\ /\ /\ ------
 
+    
 # Exercise 8
 # Create a function called display_menu that receives an argument called menu. The function should do the following:
 # 1. Verify that menu is in fact a tuple. If it isnt, return back -1.
@@ -178,7 +179,6 @@ def exercise07(n):
 # 8. The menu options should repeatedly be displayed after each selection (and appropriate delegate function is called) until user selects exist
 
 # ------ Place code below here \/ \/ \/ ------
-
 #1.
 display_menu={'drink':'coke','burger':'chicken_sandwhich','roll':'chicken_roll','salad':'caesar_salad','snack':'chicken_tender'}
 print(display_menu)
@@ -213,6 +213,8 @@ while user_active:
         user_active=False
 # ------ Place code above here /\ /\ /\ ------
 
+
+
 def exercise09():
     # Compile a list of 10 random URLs of dog pics
 
@@ -222,12 +224,14 @@ def exercise09():
     print(str(dog_media.content))
     
     # ------ Place code below here \/ \/ \/ ------
+
     
-
-
+    
     # ------ Place code above here /\ /\ /\ ------
 
     return dogs
+
+
 
 def exercise10(sentence):
 
@@ -235,9 +239,19 @@ def exercise10(sentence):
     reversed = ''
 
     # ------ Place code below here \/ \/ \/ ------
-    
-
-
+def reverse_sentence(sentence): 
+   
+    words = sentence.split(" ") 
+      
+    reverse_words = [word[::-1] for word in words] 
+      
+    new_sentence = "_".join(reverse_words) 
+  
+    return new_sentence 
+   
+sentence = "I love my puppy, Moschino!"
+ 
+print(reverse_sentence(sentence))    
     # ------ Place code above here /\ /\ /\ ------
     return reversed
 
