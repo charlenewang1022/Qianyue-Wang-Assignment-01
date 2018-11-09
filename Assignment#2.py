@@ -100,19 +100,19 @@ def exercise04(more_temperatures, iot_sensor_points, a, b, c, d, e):
         print(s)
     
     #5.
-    temperatures_list=[40,50,60,70,80,90,100]
+    temperatures_list=[40,50,60,70,80,45,58]
     for samples in range(2,7):
         print(temperatures_list[samples])
         
     #6.
     import copy
-    samples = {'a':40,'b':50,'c':60,'d':70,'e':80,}
+    samples = [60,70,80,45,58]
     copy_of_samples = copy.copy(samples)
     print(copy_of_samples)
     
     #7.
-    more_temperatures = {'a':40,'b':50,'c':60,'d':70,'e':80,}
-    ascending_temperatures = sorted(more_temperatures.values())
+    samples = {'c':60,'d':70,'e':80,'f':45,'g':58}
+    ascending_temperatures = sorted(samples.values())
     for s in ascending_temperatures:
         print(s)
     # ------ Place code above here /\ /\ /\ ------
