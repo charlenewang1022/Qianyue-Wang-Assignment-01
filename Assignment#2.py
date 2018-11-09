@@ -98,6 +98,10 @@ def exercise04(more_temperatures, iot_sensor_points, a, b, c, d, e):
         print(temperatures_list[samples])
         
     #6.
+    import copy
+    samples = {'a':40,'b':50,'c':60,'d':70,'e':80,}
+    copy_of_samples = copy.copy(samples)
+    print(copy_of_samples)
     
     #7.
     
