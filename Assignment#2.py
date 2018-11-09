@@ -88,6 +88,13 @@ def exercise04(more_temperatures, iot_sensor_points, a, b, c, d, e):
         
     #4.
     more_temperatures = {'a':40,'b':50,'c':60,'d':70,'e':80,}
+    descending_temperatures = sorted(more_temperatures.values(),reverse=True)
+    for s in descending_temperatures:
+        print(s)
+    
+    #or
+    
+    more_temperatures = {'a':40,'b':50,'c':60,'d':70,'e':80,}
     descending_temperatures = sorted(more_temperatures.items(), key=lambda x: x[1], reverse=True)
     for s in descending_temperatures:
         print(s)
