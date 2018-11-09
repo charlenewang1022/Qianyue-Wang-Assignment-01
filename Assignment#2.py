@@ -70,9 +70,12 @@ def exercise04(more_temperatures, iot_sensor_points, a, b, c, d, e):
     copy_of_samples = []
 
     # ------ Place code below here \/ \/ \/ ------
-
-
-
+    #1.
+    more_temperatures = {'a':40,'b':50,'c':60,'d':70,'e':80,}
+    print(more_temperatures.items())
+    
+    #2.
+    
     # ------ Place code above here /\ /\ /\ ------
 
     return samples, temperatures, more_temperatures, iot_sensor_points, a, b, c, d, e, copy_of_samples
