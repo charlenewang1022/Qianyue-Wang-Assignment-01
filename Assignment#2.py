@@ -222,6 +222,13 @@ while user_active:
 
 def exercise09():
     # Compile a list of 10 random URLs of dog pics    
+
+    dogs = []
+    url = 'https://random.dog/woof.json'
+    dog_media = r.get(url=url)
+    print(str(dog_media.content))
+    
+    # ------ Place code below here \/ \/ \/ ------
 import random
 import urllib.request
 
@@ -233,12 +240,6 @@ download_image("https://random.dog/woof.json")
 
 #or
 
-    dogs = []
-    url = 'https://random.dog/woof.json'
-    dog_media = r.get(url=url)
-    print(str(dog_media.content))
-    
-    # ------ Place code below here \/ \/ \/ ------
 from bs4 import BeautifulSoup
 import requests as r
 dog_media = r.get(url='https://random.dog/woof.json')
