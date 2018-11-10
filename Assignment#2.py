@@ -162,8 +162,13 @@ def exercise07(n):
     # This function looks for duplicates in list n. If there is a duplicate False is returned. If there are no duplicates True is returned.
 
     # ------ Place code below here \/ \/ \/ ------
-
-
+a = (3,7,12,9,3,7,11,5,12)  
+b = set(a)  
+print (b)
+if len(b) < len(a):  
+  print ("False")
+else:  
+  print ("True") 
     # ------ Place code above here /\ /\ /\ ------
 
     
